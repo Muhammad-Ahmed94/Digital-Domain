@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+
 import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body className={nunito.className}>
+        <NextThemesProvider attribute="class" defaultTheme="dark"> {/* wrapping the entire root layout in next theme provider */}
+          {children}
+        </NextThemesProvider>
+      </body>
     </html>
   );
 }
