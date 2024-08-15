@@ -40,9 +40,13 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex justify-center items-center text-purple text-xm lg:text-xl md:text-xs">Check live site here <span><FaLocationArrow className="ms-2" /></span> </p>
+                  <p className="flex justify-center items-center text-purple text-xm lg:text-xl md:text-xs">
+                    Check live site here{" "}
+                    <span>
+                      <FaLocationArrow className="ms-2" />
+                    </span>{" "}
+                  </p>
                 </div>
-
               </div>
             </PinContainer>
           </div>

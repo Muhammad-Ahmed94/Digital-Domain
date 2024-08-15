@@ -1,7 +1,7 @@
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "I am constantly learning",
+    description: "My Tech Stack",
     className: "lg:col-span-3 my-4 md:col-span-2 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -41,146 +41,88 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    title: "Portfolio-My Digital Domain",
+    des: "Built in Next.js 14, Typescript, Aceternity UI powered by Framer Motion, Three js and Sentry for monitoring from backend",
+    img: "/portfolio.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/three.svg",
+      "/fm.svg",
+    ],
     link: "https://github.com/adrianhajdin?tab=repositories",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "Counsailor-Personal therapist Powered by Google-Gemini & Firebase",
+    des: "Personal therapist chat app using React.js, Tailwind CSS, Google Gemini, and Firebase authentication that makes your mood better and help you relax",
+    img: "/counsailor-pic.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/firebase.svg",
+      "/gemini.svg",
+    ],
+    link: "https://counsailor.netlify.app",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "Flowsphere-Chatting App",
+    des: "A secure, real-time chat app for simple texting along with file-sharing capabilities, powered by React, Firebase, and Tailwind CSS",
+    img: "/flowsphere-pic.png",
+    iconLists: ["/re.svg", "/tail.svg", "/firebase.svg"],
+    link: "https://flowsphere.netlify.app",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    title: "DashZilla",
+    des: "A powerful admin dashboard for sales-service built in React.Js, Tailwindcss and Re-Charts",
+    img: "/Dashzilla-pic.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://dashzilla.netlify.app",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    title: "Climeadeeno-Weather app",
+    des: "Get real time weather updates based on user's location and custom searches. React.js, Tailwind CSS and powered by openweather API",
+    img: "/Climeadeeno.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://climeadeeno.netlify.app/",
   },
   {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    id: 6,
+    title: "AnimeBible-Hub for Anime content",
+    des: "Get details on the most popular and most trending animes or the ones you have in mind. Built with React.js, Tailwind CSS powered by Jikan API",
+    img: "/Anime-Verse-pic.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://animebible.netlify.app/",
   },
   {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    id: 7,
+    title: "GiphArea",
+    des: "Get your most popular and most trending Gifs or the ones you want to search. Built with React.js, Tailwind CSS powered by Giphy API",
+    img: "/GiphArea-pic.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://gipharea.netlify.app/",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
+    link: "https://github.com/Muhammad-Ahmed94",
     img: "/git.svg",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    link: "https://www.linkedin.com/in/muneeb-ahmed-544a01254/",
+    img: "/link.svg",
   },
   {
     id: 3,
-    img: "/link.svg",
+    link: "https://www.instagram.com/muneeb_ahmed._/?hl=en",
+    img: "/insta.svg",
   },
 ];
+

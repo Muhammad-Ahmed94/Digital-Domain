@@ -19,7 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange> {/* wrapping the entire root layout in next theme provider */}
+        <NextThemesProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {" "}
+          {/* wrapping the entire root layout in next theme provider */}
           {children}
         </NextThemesProvider>
       </body>

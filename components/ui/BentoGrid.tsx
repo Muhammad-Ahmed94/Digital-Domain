@@ -90,34 +90,59 @@ export const BentoGridItem = ({
             {title}
           </div>
           {id === 2 && <GlobeDemo />}
-          {id === 3 && ( /* My tech stack */
+          {id === 3 /* My tech stack */ && (
             <div className="flex flex-col text-center gap-1 lg:gap-5 w-fit absolute -right-3  lg:right-2">
-              <div className="flex gap-3 lg:gap-8">
-                {["Next Js", "React Js", "Typescript", "Javascript"].map(
-                  (item /* left list */) => (
-                    <span
-                      key={item}
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e]"
-                    >
-                        {item}
-                    </span>
-                  )
-                )}
+              <div className="flex gap-3 lg:gap-8 mt-16">
+                {[
+                  "Next.Js 14",
+                  "React Js",
+                  "Typescript",
+                  "Javascript(ES6+)",
+                  "HTML5",
+                ].map((item /* left list */) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e]"
+                  >
+                    {item}
+                  </span>
+                ))}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
               </div>
 
               <div className="flex gap-3 lg:gap-8">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["Tailwind Css", "Sass", "FramerMotion", "Aceternity UI"].map(
-                  (item /* left list */) => (
-                    <span
-                      key={item}
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e]"
-                    >
-                        {item}
-                    </span>
-                  )
-                )}
+                {[
+                  "Tailwind Css",
+                  "SASS(Sassy CSS)",
+                  "FramerMotion",
+                  "Aceternity UI",
+                ].map((item /* left list */) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-3 lg:gap-8">
+                {[
+                  "Git & GitHub",
+                  "API Integration",
+                  "Google-Firebase",
+                  "Vite",
+                  "npm & yarn",
+                ].map((item /* left list */) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
               </div>
             </div>
           )}
