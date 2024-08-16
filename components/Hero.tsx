@@ -45,21 +45,30 @@ const Hero = () => {
             Welcome to my digital castle. Thanks 👋
           </p>
 
-          {/**
-           *  Link: https://ui.aceternity.com/components/text-generate-effect
-           *
-           *  change md:text-6xl, add more responsive code
-           */}
-          <TextGenerateEffect
-            className="text-center text-6xl md:text-4xl lg:text-6xl"
-            words="Hi, Iam Muneeb, a passionate software engineer & tech savy"
-            duration={0.5}
-          />
-          <TextGenerateEffect
-            className="text-center tracking-wider text-sm md:text-xl lg:text-2xl"
-            words="Working to bring you Reliable Digital solutions with cutting edge technology is my job. I carry digital persona all over the world"
-            duration={2.5}
-          />
+          <div className="flex gap-2 justify-between items-center w-full"> 
+            <div className="flex flex-col">
+              <TextGenerateEffect
+                className="text-center text-6xl md:text-4xl lg:text-6xl"
+                words="Hi, Iam Muneeb, a passionate software engineer & tech savy" 
+                duration={0.5}
+              />
+              <TextGenerateEffect
+                className="text-center tracking-wider text-sm md:text-xl lg:text-2xl"
+                words="Working to bring you Reliable Digital solutions with cutting edge technology is my job. I carry digital persona all over the world"
+                duration={2.5}
+              />
+            </div>
+            <img
+              src="/muneeb-pic.jpeg"
+              alt="my-image"
+              className="rounded-full h-40 w-40 object-cover"
+            />
+            {/**
+             *  Link: https://ui.aceternity.com/components/text-generate-effect
+             *
+             *  change md:text-6xl, add more responsive code
+             */}
+          </div>
 
           <a href="/dummy-cv.pdf" download title="download cv" className="py-3">
             <SpecialButton
