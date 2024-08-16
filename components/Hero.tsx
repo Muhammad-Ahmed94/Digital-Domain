@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Welcome to my digital castle. Thanks 👋
           </p>
 
           {/**
@@ -52,12 +52,12 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             className="text-center text-6xl md:text-4xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Hi, Iam Muneeb, a passionate software engineer & tech savy"
             duration={0.5}
           />
           <TextGenerateEffect
             className="text-center tracking-wider text-sm md:text-xl lg:text-2xl"
-            words="Hi, i'm Muneeb, a passionate tech geek. Carrying digital persona all over the world."
+            words="Working to bring you Reliable Digital solutions with cutting edge technology is my job. I carry digital persona all over the world"
             duration={2.5}
           />
 
