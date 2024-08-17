@@ -70,7 +70,7 @@ const Hero = () => {
              */}
           </div>
 
-          <a href="/dummy-cv.pdf" download title="download cv" className="py-3">
+          <a href="/my-cv.pdf" download title="download cv" className="py-3">
             <SpecialButton
               title="Download CV"
               icon={
