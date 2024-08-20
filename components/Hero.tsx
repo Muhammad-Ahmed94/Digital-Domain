@@ -59,7 +59,7 @@ const Hero = () => {
               />
             </div>
             <img
-              src="/muneeb-pic.jpeg"
+              src="/my-pic.jpeg"
               alt="my-image"
               className="rounded-full h-40 w-40 object-cover"
             />
@@ -70,9 +70,9 @@ const Hero = () => {
              */}
           </div>
 
-          <a href="/my-cv.pdf" download title="download cv" className="py-3">
+          <a href="/my-resume.pdf" download title="download resume" className="py-3">
             <SpecialButton
-              title="Download CV"
+              title="My Resume"
               icon={
                 <HiOutlineDownload className="text-xl md:text-lg sm:text-sm" />
               }

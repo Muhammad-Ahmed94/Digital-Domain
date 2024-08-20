@@ -7,8 +7,8 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Digital Domain",
-  description: "Muneeb the dev personal portfolio",
+  title: "Muneeb Ahmed",
+  description: "A passionate web developer",
 };
 
 export default function RootLayout({
