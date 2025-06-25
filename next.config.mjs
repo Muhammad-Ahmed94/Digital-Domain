@@ -7,16 +7,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Remove Sentry completely for better performance
-  experimental: {
-    optimizeCss: true,
-  },
   // Optimize images
   images: {
     unoptimized: true, // Since using static export
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // Bundle analyzer for production optimization
   webpack: (config, { isServer }) => {
@@ -30,11 +28,7 @@ const nextConfig = {
             name: 'vendors',
             chunks: 'all',
           },
-          three: {
-            test: /[\\/]node_modules[\\/](three|three-globe|@react-three)[\\/]/,
-            name: 'three',
-            chunks: 'all',
-          },
+
           framer: {
             test: /[\\/]node_modules[\\/]framer-motion[\\/]/,
             name: 'framer',
