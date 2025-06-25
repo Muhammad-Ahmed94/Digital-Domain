@@ -23,7 +23,7 @@ export const gridItems = [
     className: "lg:col-span-1 text-sm md:col-span-2 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
+    img: "/globe-image.jpg",
     spareImg: "",
   },
   {
