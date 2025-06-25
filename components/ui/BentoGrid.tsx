@@ -3,7 +3,7 @@ import { Suspense, lazy } from "react";
 import Image from "next/image";
 
 // Lazy load the Globe component for better performance
-const GlobeDemo = lazy(() => import("./GridGlobe").then(module => ({ default: module.GlobeDemo })));
+// const GlobeDemo = lazy(() => import("./GridGlobe").then(module => ({ default: module.GlobeDemo })));
 
 export const BentoGrid = ({
   className,
@@ -106,7 +106,7 @@ export const BentoGridItem = ({
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
               </div>
             }>
-              <GlobeDemo />
+              {/* <GlobeDemo /> */}
             </Suspense>
           )}
           

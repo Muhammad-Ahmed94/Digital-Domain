@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[70vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Welcome to my digital castle. Thanks 👋
+            Welcome to my digital ecosystem. Let&apos;s build something amazing! 🚀
           </p>
 
           <div className="flex flex-col lg:flex-row gap-6 justify-between items-center w-full mt-6">
@@ -47,12 +47,12 @@ const Hero = () => {
             <div className="flex flex-col flex-1">
               <TextGenerateEffect
                 className="text-center lg:text-left text-4xl md:text-5xl lg:text-6xl"
-                words="Hi, I am Muneeb, a passionate software engineer & tech savvy" 
+                words="Hi, I'm Muneeb Ahmed, Full-Stack MERN Developer & passionate about my work" 
                 duration={0.5}
               />
               <TextGenerateEffect
                 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4"
-                words="Working to bring you Reliable Digital solutions with cutting edge technology is my job. I carry digital persona all over the world"
+                words="Specializing in MongoDB, Express.js, React, and Node.js to create scalable web applications. I transform complex business requirements into elegant, high-performance digital solutions that drive growth and user engagement"
                 duration={2.5}
               />
             </div>
@@ -62,7 +62,7 @@ const Hero = () => {
               <div className="relative w-48 h-60 lg:w-56 lg:h-72 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/my-pic.jpg"
-                  alt="Muneeb Ahmed - Software Engineer"
+                  alt="Muneeb Ahmed - Software Engineer-Full Stack MERN Developer"
                   fill
                   sizes="(max-width: 768px) 192px, 224px"
                   className="object-cover"

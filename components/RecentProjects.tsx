@@ -56,7 +56,7 @@ const RecentProjects = () => {
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-2">
                     {iconLists.map((icon, iconIndex) => (
                       <div 
                         key={iconIndex}
@@ -65,8 +65,8 @@ const RecentProjects = () => {
                         <Image 
                           src={icon} 
                           alt={`Technology icon ${iconIndex + 1}`}
-                          width={24}
-                          height={24}
+                          width={60}
+                          height={60}
                           className="p-2"
                           loading="lazy"
                         />

@@ -20,15 +20,14 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take your{" "}
+           Ready to transform your ideas into{" "}
           <span className="text-purple underline font-bold">
-            Digital Presence
+            Powerful Applications
           </span>{" "}
-          to the next level
         </h1>
         <p className="text-center lg:text-lg md:text-xl mt-3 md:mt-6">
-          Let&apos;s set up a{" "}
-          <span className="text-purple font-bold">Meeting</span>
+          Let&apos;s discuss{" "}
+          <span className="text-purple font-bold">Contact</span>
         </p>
         <a 
           href="mailto:muneebbum757@gmail.com" 
@@ -36,7 +35,7 @@ const Footer = () => {
           aria-label="Send email to Muneeb Ahmed"
         >
           <SpecialButton
-            title="Leave a Message here"
+            title="Let&apos;s start our conversation"
             icon={
               <MdOutlineMessage className="text-xl md:text-lg sm:text-sm" />
             }
