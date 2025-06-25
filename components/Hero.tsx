@@ -50,11 +50,12 @@ const Hero = () => {
                 words="Hi, I'm Muneeb Ahmed, Full-Stack MERN Developer & passionate about my work" 
                 duration={0.5}
               />
-              <TextGenerateEffect
+              {/* <TextGenerateEffect
                 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4"
                 words="Specializing in MongoDB, Express.js, React, and Node.js to create scalable web applications. I transform complex business requirements into elegant, high-performance digital solutions that drive growth and user engagement"
                 duration={2.5}
-              />
+              /> */}
+              <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">Specializing in <span className="text-[#429333] font-extrabold">MongoDB</span>, <span className="text-[#4F4A50] font-extrabold">Express.js,</span> <span className="text-[#61DAF8] font-extrabold">React,</span> and <span className="text-[#8BC949] font-extrabold">Node.js</span> to create scalable web applications. I transform complex business requirements into elegant, high-performance digital solutions that drive growth and user engagement</h1>
             </div>
             
             {/* Optimized profile image with proper sizing */}

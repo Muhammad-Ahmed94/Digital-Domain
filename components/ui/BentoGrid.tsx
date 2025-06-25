@@ -2,8 +2,6 @@ import { cn } from "@/lib/utils";
 import { Suspense, lazy } from "react";
 import Image from "next/image";
 
-// Lazy load the Globe component for better performance
-// const GlobeDemo = lazy(() => import("./GridGlobe").then(module => ({ default: module.GlobeDemo })));
 
 export const BentoGrid = ({
   className,
