@@ -6,12 +6,15 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-20 " id="contact">
+    <footer className="w-full py-20" id="contact">
       <div className="w-full absolute -bottom-72 left-0 min-h-96">
-        <img
-          className="w-full h-full opacity-70"
+        <Image
           src="/footer-grid.svg"
-          alt="footer-grid"
+          alt="Footer grid background"
+          fill
+          className="w-full h-full opacity-70 object-cover"
+          sizes="100vw"
+          loading="lazy"
         />
       </div>
 
@@ -24,10 +27,14 @@ const Footer = () => {
           to the next level
         </h1>
         <p className="text-center lg:text-lg md:text-xl mt-3 md:mt-6">
-          Lets&apos;s set up a{"  "}
+          Let&apos;s set up a{" "}
           <span className="text-purple font-bold">Meeting</span>
         </p>
-        <a href="mailto:muneebbum757@gmail.com" className="font-bold my-4">
+        <a 
+          href="mailto:muneebbum757@gmail.com" 
+          className="font-bold my-4"
+          aria-label="Send email to Muneeb Ahmed"
+        >
           <SpecialButton
             title="Leave a Message here"
             icon={
@@ -45,8 +52,20 @@ const Footer = () => {
         <div className="mt-5 flex items-center justify-center gap-4 md:gap-5 z-30 saturate-150 opacity-75">
           {socialMedia.map(({ id, link, img }) => (
             <div key={id}>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <Image src={img} alt="image" height={35} width={35} />
+              <a 
+                href={link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label={`Visit Muneeb's ${link.includes('github') ? 'GitHub' : link.includes('linkedin') ? 'LinkedIn' : 'Instagram'} profile`}
+                className="hover:opacity-80 transition-opacity"
+              >
+                <Image 
+                  src={img} 
+                  alt={`${link.includes('github') ? 'GitHub' : link.includes('linkedin') ? 'LinkedIn' : 'Instagram'} icon`}
+                  height={35} 
+                  width={35}
+                  loading="lazy"
+                />
               </a>
             </div>
           ))}
