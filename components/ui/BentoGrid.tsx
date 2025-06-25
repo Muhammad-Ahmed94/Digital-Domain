@@ -94,11 +94,12 @@ export const BentoGridItem = ({
             <div className="flex flex-col text-center gap-1 lg:gap-5 w-fit absolute -right-3  lg:right-2">
               <div className="flex gap-3 lg:gap-8 mt-16">
                 {[
-                  "Next.Js 14",
-                  "React Js",
-                  "Typescript",
-                  "Javascript(ES6+)",
-                  "HTML5",
+                  "React JS",
+                  "Express JS",
+                  "Node JS",
+                  "MongoDB",
+                  "MERN-Stack",
+                  "Next JS"
                 ].map((item /* left list */) => (
                   <span
                     key={item}
@@ -115,8 +116,8 @@ export const BentoGridItem = ({
                 {[
                   "Tailwind Css",
                   "SASS(Sassy CSS)",
+                  "Vanilla CSS",
                   "FramerMotion",
-                  "Aceternity UI",
                 ].map((item /* left list */) => (
                   <span
                     key={item}
@@ -132,7 +133,7 @@ export const BentoGridItem = ({
                   "Git & GitHub",
                   "API Integration",
                   "Google-Firebase",
-                  "Vite",
+                  "Backend Development",
                   "npm & yarn",
                 ].map((item /* left list */) => (
                   <span

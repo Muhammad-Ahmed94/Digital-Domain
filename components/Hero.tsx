@@ -59,7 +59,7 @@ const Hero = () => {
               />
             </div>
             <img
-              src="/my-pic.jpeg"
+              src="/my-pic.jpg"
               alt="my-image"
               className="rounded-full h-40 w-40 object-cover"
             />
