@@ -40,7 +40,6 @@ export default function RootLayout({
         <link rel="preload" href="/my-pic.jpg" as="image" />
         <link rel="preload" href="/footer-grid.svg" as="image" />
         
-        {/* Critical CSS will be inlined by Next.js */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

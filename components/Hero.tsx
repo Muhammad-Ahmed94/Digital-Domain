@@ -5,7 +5,9 @@ import { TextGenerateEffect } from "./ui/TextGenerate-Effect";
 import Image from "next/image";
 
 // Lazy load Spotlight
-const Spotlight = lazy(() => import("./ui/Spotlight").then(module => ({ default: module.Spotlight })));
+const Spotlight = lazy(() =>
+  import("./ui/Spotlight").then((module) => ({ default: module.Spotlight }))
+);
 
 const Hero = () => {
   return (
@@ -39,7 +41,8 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[70vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Welcome to my digital ecosystem. Let&apos;s build something amazing! 🚀
+            Welcome to my digital ecosystem. Let&apos;s build something amazing!
+            🚀
           </p>
 
           <div className="flex flex-col lg:flex-row gap-6 justify-between items-center w-full mt-6">
@@ -47,17 +50,25 @@ const Hero = () => {
             <div className="flex flex-col flex-1">
               <TextGenerateEffect
                 className="text-center lg:text-left text-4xl md:text-5xl lg:text-6xl"
-                words="Hi, I'm Muneeb Ahmed, Full-Stack MERN Developer & passionate about my work" 
+                words="Hi, I'm Muneeb Ahmed, Full-Stack MERN Developer & passionate about my work"
                 duration={0.5}
               />
-              {/* <TextGenerateEffect
-                className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4"
-                words="Specializing in MongoDB, Express.js, React, and Node.js to create scalable web applications. I transform complex business requirements into elegant, high-performance digital solutions that drive growth and user engagement"
-                duration={2.5}
-              /> */}
-              <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">Specializing in <span className="text-[#429333] font-extrabold">MongoDB</span>, <span className="text-[#4F4A50] font-extrabold">Express.js,</span> <span className="text-[#61DAF8] font-extrabold">React,</span> and <span className="text-[#8BC949] font-extrabold">Node.js</span> to create scalable web applications. I transform complex business requirements into elegant, high-performance digital solutions that drive growth and user engagement</h1>
+
+              <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">
+                Specializing in{" "}
+                <span className="text-[#429333] font-extrabold">MongoDB</span>,{" "}
+                <span className="text-[#4F4A50] font-extrabold">
+                  Express.js,
+                </span>{" "}
+                <span className="text-[#61DAF8] font-extrabold">React,</span>{" "}
+                and{" "}
+                <span className="text-[#8BC949] font-extrabold">Node.js</span>{" "}
+                to create scalable web applications. I transform complex
+                business requirements into elegant, high-performance digital
+                solutions that drive growth and user engagement
+              </h1>
             </div>
-            
+
             {/* Optimized profile image with proper sizing */}
             <div className="flex-shrink-0 lg:ml-8">
               <div className="relative w-48 h-60 lg:w-56 lg:h-72 rounded-2xl overflow-hidden shadow-2xl">
@@ -79,10 +90,10 @@ const Hero = () => {
 
           {/* Resume download button */}
           <div className="mt-8">
-            <a 
-              href="/my-resume.pdf" 
-              download 
-              title="download resume" 
+            <a
+              href="/my-resume.pdf"
+              download
+              title="download resume"
               className="inline-block"
               aria-label="Download Muneeb's Resume"
             >

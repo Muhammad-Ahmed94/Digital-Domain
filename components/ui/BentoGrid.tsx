@@ -104,11 +104,10 @@ export const BentoGridItem = ({
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
               </div>
             }>
-              {/* <GlobeDemo /> */}
             </Suspense>
           )}
           
-          {/* Tech stack grid - optimized */}
+          {/* Tech stack grid */}
           {id === 3 && (
             <div className="flex flex-col text-center gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-2">
               <div className="flex gap-3 lg:gap-8 mt-16">
