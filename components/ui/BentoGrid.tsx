@@ -1,5 +1,5 @@
+// components/ui/BentoGrid.tsx
 import { cn } from "@/lib/utils";
-import { Suspense, lazy } from "react";
 import Image from "next/image";
 
 
@@ -90,89 +90,82 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-normal text-neutral-600 text-sm md:text-xs lg:text-base z-10">
-            {description}
-          </div>
-          <div className="font-sans font-bold text-lg lg:text-xl max-w-96 z-10">
-            {title}
-          </div>
-          
-          {/* Lazy load Globe component only when needed */}
-          {id === 2 && (
-            <Suspense fallback={
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
-              </div>
-            }>
-            </Suspense>
-          )}
-          
-          {/* Tech stack grid */}
-          {id === 3 && (
-            <div className="flex flex-col text-center gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-2">
-              <div className="flex gap-3 lg:gap-8 mt-16">
-                {[
-                  "React JS",
-                  "Express JS", 
-                  "Node JS",
-                  "MongoDB",
-                  "MERN-Stack",
-                  "Next JS"
-                ].map((item, index) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform"
-                    style={{
-                      animationDelay: `${index * 0.1}s`
-                    }}
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+          {id === 3 ? (
+            <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start w-full h-full z-10">
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-6 lg:mb-0 lg:w-1/3">
+                <p className="font-sans font-normal text-neutral-600 text-sm md:text-xs lg:text-base z-10">
+                  {description}
+                </p>
+                <div className="font-sans font-bold text-lg lg:text-xl max-w-96 z-10 mt-2">
+                  {title}
+                </div>
               </div>
 
-              <div className="flex gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {[
-                  "Tailwind CSS",
-                  "SASS(Sassy CSS)",
-                  "Vanilla CSS", 
-                  "FramerMotion",
-                ].map((item, index) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform"
-                    style={{
-                      animationDelay: `${(index + 6) * 0.1}s`
-                    }}
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              <div className="flex flex-col items-center lg:items-end w-full lg:w-2/3 gap-y-2 lg:gap-y-4"> {/* Vertical gap between rows of badges */}
+                <div className="flex flex-wrap justify-center lg:justify-end gap-2 lg:gap-3"> {/* Horizontal gap between badges */}
+                  {[
+                    "React JS",
+                    "Express JS",
+                    "Node JS",
+                    "MongoDB",
+                    "MERN-Stack",
+                    "Next JS"
+                  ].map((item, index) => (
+                    <span
+                      key={item}
+                      className="py-2 px-3 text-xs md:text-sm lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform whitespace-nowrap"
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
 
-              <div className="flex gap-3 lg:gap-8">
-                {[
-                  "Git & GitHub",
-                  "API Integration", 
-                  "Google-Firebase",
-                  "Backend Development",
-                  "npm & yarn",
-                ].map((item, index) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform"
-                    style={{
-                      animationDelay: `${(index + 10) * 0.1}s`
-                    }}
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                <div className="flex flex-wrap justify-center lg:justify-end gap-2 lg:gap-3">
+                  {[
+                    "Tailwind CSS",
+                    "SASS(Sassy CSS)",
+                    "Vanilla CSS",
+                    "FramerMotion",
+                  ].map((item, index) => (
+                    <span
+                      key={item}
+                      className="py-2 px-3 text-xs md:text-sm lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform whitespace-nowrap"
+                      style={{ animationDelay: `${(index + 6) * 0.05}s` }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap justify-center lg:justify-end gap-2 lg:gap-3">
+                  {[
+                    "Git & GitHub",
+                    "API Integration",
+                    "Google-Firebase",
+                    "Backend Development",
+                    "npm & yarn",
+                  ].map((item, index) => (
+                    <span
+                      key={item}
+                      className="py-2 px-3 text-xs md:text-sm lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10123e] will-change-transform whitespace-nowrap"
+                      style={{ animationDelay: `${(index + 10) * 0.05}s` }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
+          ) : (
+            <>
+              <div className="font-sans font-normal text-neutral-600 text-sm md:text-xs lg:text-base z-10">
+                {description}
+              </div>
+              <div className="font-sans font-bold text-lg lg:text-xl max-w-96 z-10">
+                {title}
+              </div>
+            </>
           )}
         </div>
       </div>
