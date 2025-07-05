@@ -89,7 +89,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "DashZilla - Analytics Dashboard",
+    title: "DashZilla - Analytics Dashboard(Desktop Only)",
     des: "Comprehensive admin dashboard with interactive charts, real-time data visualization, sales analytics, and responsive design for business intelligence.",
     img: "/dashzilla.jpg",
     iconLists: ["/re.svg", "/tail.svg"],
