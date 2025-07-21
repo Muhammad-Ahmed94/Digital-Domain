@@ -13,7 +13,7 @@ const RecentProjects = () => {
         A quick overview of <span className="text-purple">My Projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 gap-12 mt-2">
-        {projects.map(({ id, title, des, img, iconLists, link }, index) => (
+        {projects.map(({ id, title, des, img, tech, link }, index) => (
           <div
             key={id}
             className="sm:h-[41rem] sm:w-[570px] h-[32rem] lg:min-h-[30.5rem] flex items-center justify-center w-[80vw]"
@@ -56,21 +56,14 @@ const RecentProjects = () => {
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
-                  <div className="flex items-center gap-2">
-                    {iconLists.map((icon, iconIndex) => (
-                      <div 
-                        key={iconIndex}
-                        className="border border-white/[0.2] flex items-center justify-center rounded-full lg:h-10 lg:w-10 w-9 h-9 -ml-2 first:ml-0"
+                  <div className="flex items-center gap-2 flex-wrap">
+                    {tech?.map((techName, techIndex) => (
+                      <span
+                      key={techIndex}
+                      className="py-1 px-3 text-xs lg:text-sm rounded-lg text-center bg-[#10123e]"
                       >
-                        <Image 
-                          src={icon} 
-                          alt={`Technology icon ${iconIndex + 1}`}
-                          width={60}
-                          height={60}
-                          className="p-2"
-                          loading="lazy"
-                        />
-                      </div>
+                        {techName}
+                      </span>
                     ))}
                   </div>
 

@@ -1,7 +1,4 @@
-// components/ui/BentoGrid.tsx
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-
 
 export const BentoGrid = ({
   className,
@@ -27,10 +24,7 @@ export const BentoGridItem = ({
   title,
   description,
   id,
-  img,
-  imgClassName,
   titleClassName,
-  spareImg,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -38,15 +32,12 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id: number;
-  img?: string;
-  imgClassName?: string;
   titleClassName?: string;
-  spareImg?: string;
 }) => {
   return (
     <div
       className={cn(
-        "relative row-span-1 overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+        "relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
       )}
       style={{
@@ -56,34 +47,6 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6} && 'flex justify-center w-full' `}>
-        <div className="w-full h-full absolute">
-          {img && (
-            <Image
-              src={img}
-              alt={`Bento grid item ${id}`}
-              fill
-              className={cn(imgClassName, "object-cover object-center")}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              loading="lazy"
-            />
-          )}
-        </div>
-        <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
-          }`}
-        >
-          {spareImg && (
-            <Image
-              src={spareImg}
-              alt={`Spare image for item ${id}`}
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              loading="lazy"
-            />
-          )}
-        </div>
         <div
           className={cn(
             titleClassName,
@@ -93,10 +56,10 @@ export const BentoGridItem = ({
           {id === 3 ? (
             <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start w-full h-full z-10">
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-6 lg:mb-0 lg:w-1/3">
-                <p className="font-sans font-normal text-neutral-600 text-sm md:text-xs lg:text-base z-10">
+                <p className="font-sans font-bold text-lg lg:text-3xl md:text-xl z-10">
                   {description}
                 </p>
-                <div className="font-sans font-bold text-lg lg:text-xl max-w-96 z-10 mt-2">
+                <div className="font-sans font-semibold text-gray-500 text-lg lg:text-xl max-w-96 z-10 mt-2">
                   {title}
                 </div>
               </div>

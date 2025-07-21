@@ -7,34 +7,11 @@ export const navItems = [
 
 export const gridItems = [
   {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-2 md:col-span-1 md:row-span-1 lg:min-h-[30vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm available across all time zones for global collaboration and project delivery",
-    description: "",
-    className: "lg:col-span-1 text-sm md:col-span-2 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/globe-image.jpg",
-    spareImg: "",
-  },
-  {
     id: 3,
-    title: "Evolving with constant learning always",
     description: "My Tech Stack",
-    className: "lg:col-span-3 lg:row-span-1 my-4 md:col-span-3",
-    imgClassName: "",
+    title: "Evolving with constant learning always",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
   },
 ];
 
@@ -44,7 +21,8 @@ export const projects = [
     title: "Forever - E-Commerce Platform",
     des: "A full-stack MERN e-commerce application with user authentication, user role(customer-admin), shopping cart, and payment processing with stripe",
     img: "/forever.jpg",
-    iconLists: ["/mdb.svg", "/exp.svg", "/re.svg",  "/nj.svg", "/ts.svg", "/tail.svg"],
+    // iconLists: ["/mdb.svg", "/exp.svg", "/re.svg",  "/nj.svg", "/ts.svg", "/tail.svg"],
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Tailwind CSS"],
     link: "https://forever-frontend-je1a.onrender.com/",
   },
   {
@@ -52,7 +30,7 @@ export const projects = [
     title: "LetsTalk - Real-Time Chat Application",
     des: "Chatting application. MERN stack messaging platform with Socket.IO for RTC and online status tracking",
     img: "/letstalk.jpg",
-    iconLists: ["/mdb.svg", "/exp.svg", "/re.svg",  "/nj.svg", "/ts.svg", "/tail.svg"],
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Tailwind CSS"],
     link: "",
   },
   {

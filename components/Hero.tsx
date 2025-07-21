@@ -19,7 +19,6 @@ const Hero = () => {
 
       <div className="flex justify-center items-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[70vw] flex flex-col items-center justify-center">
-
           <div className="flex flex-col lg:flex-row gap-6 justify-between items-center w-full mt-6">
             {/* Text content */}
             <div className="flex flex-col flex-1">
@@ -28,26 +27,11 @@ const Hero = () => {
                 words="Hi, I'm Muneeb Ahmed."
                 duration={0.3}
               />
-
               <TextGenerateEffect
                 className="text-center lg:text-left text-4xl md:text-3xl lg:text-2xl text-gray-500"
                 words="A Full-Stack MERN Developer specialize in creating scalable and efficient web and mobile apps."
                 duration={0.4}
               />
-
-              {/* <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">
-                Specializing in{" "}
-                <span className="text-[#429333] font-extrabold">MongoDB</span>,{" "}
-                <span className="text-[#4F4A50] font-extrabold">
-                  Express.js,
-                </span>{" "}
-                <span className="text-[#61DAF8] font-extrabold">React,</span>{" "}
-                and{" "}
-                <span className="text-[#8BC949] font-extrabold">Node.js</span>{" "}
-                to create scalable web applications. I transform complex
-                business requirements into elegant, high-performance digital
-                solutions that drive growth and user engagement
-              </h1> */}
             </div>
 
             {/* Optimized profile image with proper sizing */}
@@ -61,8 +45,6 @@ const Hero = () => {
                   className="object-cover"
                   priority
                   quality={85}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
