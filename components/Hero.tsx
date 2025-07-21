@@ -1,32 +1,11 @@
-import { Suspense, lazy } from "react";
 import SpecialButton from "./ui/SpecialButton";
 import { HiOutlineDownload } from "react-icons/hi";
 import { TextGenerateEffect } from "./ui/TextGenerate-Effect";
 import Image from "next/image";
 
-// Lazy load Spotlight
-const Spotlight = lazy(() =>
-  import("./ui/Spotlight").then((module) => ({ default: module.Spotlight }))
-);
-
 const Hero = () => {
   return (
     <div className="pb-20 pt-36" id="home">
-      {/* LAZY SPOTLIGHT */}
-      <Suspense fallback={null}>
-        <div>
-          <Spotlight
-            className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-            fill="white"
-          />
-          <Spotlight
-            className="h-[80vh] w-[50vw] top-10 left-full"
-            fill="purple"
-          />
-          <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
-        </div>
-      </Suspense>
-
       {/* Grid background with better performance */}
       <div
         className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
@@ -38,23 +17,25 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center items-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[70vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Welcome to my digital ecosystem. Let&apos;s build something amazing!
-            🚀
-          </p>
 
           <div className="flex flex-col lg:flex-row gap-6 justify-between items-center w-full mt-6">
             {/* Text content */}
             <div className="flex flex-col flex-1">
               <TextGenerateEffect
-                className="text-center lg:text-left text-4xl md:text-5xl lg:text-6xl"
-                words="Hi, I'm Muneeb Ahmed, Full-Stack MERN Developer & passionate about my work"
-                duration={0.5}
+                className="text-center lg:text-left text-6xl md:text-5xl lg:text-[4rem]"
+                words="Hi, I'm Muneeb Ahmed."
+                duration={0.3}
               />
 
-              <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">
+              <TextGenerateEffect
+                className="text-center lg:text-left text-4xl md:text-3xl lg:text-2xl text-gray-500"
+                words="A Full-Stack MERN Developer specialize in creating scalable and efficient web and mobile apps."
+                duration={0.4}
+              />
+
+              {/* <h1 className="text-center lg:text-left tracking-wider text-sm md:text-lg lg:text-xl mt-4">
                 Specializing in{" "}
                 <span className="text-[#429333] font-extrabold">MongoDB</span>,{" "}
                 <span className="text-[#4F4A50] font-extrabold">
@@ -66,7 +47,7 @@ const Hero = () => {
                 to create scalable web applications. I transform complex
                 business requirements into elegant, high-performance digital
                 solutions that drive growth and user engagement
-              </h1>
+              </h1> */}
             </div>
 
             {/* Optimized profile image with proper sizing */}

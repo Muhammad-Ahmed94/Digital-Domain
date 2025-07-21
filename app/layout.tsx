@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import Script from "next/script";
 
 import "./globals.css";
 
 // Font loading optimized
 const nunito = Nunito({ 
   subsets: ["latin"],
-  display: 'swap',
+  display: "auto",
   preload: true,
-  fallback: ['system-ui', 'arial']
+  fallback: ['system-ui', 'arial'],
+  style: "normal",
+  weight: "300",
+
 });
 
 export const metadata: Metadata = {
