@@ -29,13 +29,13 @@ const Footer = () => {
           Let&apos;s discuss{" "}
           <span className="text-purple font-bold">Contact</span>
         </p>
-        <a 
-          href="mailto:muneebbum757@gmail.com" 
+        <a
+          href="mailto:muneebbum757@gmail.com"
           className="font-bold my-4"
           aria-label="Send email to Muneeb Ahmed"
         >
           <SpecialButton
-            title="Let&apos;s start our conversation"
+            title="Let's start our conversation"
             icon={
               <MdOutlineMessage className="text-xl md:text-lg sm:text-sm" />
             }
@@ -43,32 +43,32 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex flex-col justify-between items-center md:flex-row">
-        <p className="text-sm md:text-base md:font-normal font-light">
-          Copyright &copy; 2024 MuneebDev
-        </p>
-
-        <div className="mt-5 flex items-center justify-center gap-4 md:gap-5 z-30 saturate-150 opacity-75">
+      <div className="flex flex-col items-center mt-16">
+        <div className="mb-4 flex items-center justify-center gap-4 md:gap-5 z-30 saturate-150 opacity-75">
           {socialMedia.map(({ id, link, img }) => (
             <div key={id}>
-              <a 
-                href={link} 
-                target="_blank" 
+              <a
+                href={link}
+                target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Visit Muneeb's ${link.includes('github') ? 'GitHub' : link.includes('linkedin') ? 'LinkedIn' : 'Instagram'} profile`}
                 className="hover:opacity-80 transition-opacity"
               >
-                <Image 
-                  src={img} 
+                <Image
+                  src={img}
                   alt={`${link.includes('github') ? 'GitHub' : link.includes('linkedin') ? 'LinkedIn' : 'Instagram'} icon`}
-                  height={35} 
-                  width={35}
+                  height={28}
+                  width={28}
                   loading="lazy"
                 />
               </a>
             </div>
           ))}
         </div>
+
+        <p className="text-xs md:text-sm font-light">
+          Copyright &copy; 2024 DevMuneeb
+        </p>
       </div>
     </footer>
   );
