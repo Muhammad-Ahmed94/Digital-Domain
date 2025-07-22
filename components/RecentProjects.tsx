@@ -60,7 +60,7 @@ const RecentProjects = () => {
                     {tech?.map((techName, techIndex) => (
                       <span
                       key={techIndex}
-                      className="py-1 px-3 text-xs lg:text-sm rounded-lg text-center bg-[#10123e]"
+                      className="py-1 px-3 text-xs lg:text-sm rounded-lg text-center text-purple bg-[#10123e]"
                       >
                         {techName}
                       </span>

@@ -22,7 +22,7 @@ export const projects = [
     des: "A full-stack MERN e-commerce application with user authentication, user role(customer-admin), shopping cart, and payment processing with stripe",
     img: "/forever.jpg",
     // iconLists: ["/mdb.svg", "/exp.svg", "/re.svg",  "/nj.svg", "/ts.svg", "/tail.svg"],
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Tailwind CSS"],
+    tech: ["#MongoDB", "#Express.js", "#React", "#TypeScript", "#Tailwind CSS"],
     link: "https://forever-frontend-je1a.onrender.com/",
   },
   {
@@ -30,7 +30,7 @@ export const projects = [
     title: "LetsTalk - Real-Time Chat Application",
     des: "Chatting application. MERN stack messaging platform with Socket.IO for RTC and online status tracking",
     img: "/letstalk.jpg",
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Tailwind CSS"],
+    tech: ["#MongoDB", "#Express.js", "#React", "#TypeScript", "#SokcetIO", "#Tailwind CSS"],
     link: "",
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     title: "GoWheels - Car Rental Platform",
     des: "Book or Rent a car with GoWheels, with variety of cars to explore. Frontend-only",
     img: "/gowheels.jpg",
-    iconLists: ["/re.svg", "/ts.svg", "/tail.svg"],
+    tech: ["#React", "#TypeScript", "#TailwindCSS"],
     link: "https://gowheels.netlify.app/",
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     title: "Prodigy Gaming - Awwward-Winning Design",
     des: "My most favourite project i have worked on. Showcasing awwwards winning website `ZENTRY` of the year 2024 stunning animations, smooth scrolling, and cutting-edge UI/UX design principles.",
     img: "/prodigy.jpg",
-    iconLists: ["/re.svg","/ts.svg", "/tail.svg"],
+    tech: ["#React", "#TypeScript", "#TailwindCSS"],
     link: "https://prodigygaming.netlify.app/",
   },
   {
@@ -54,7 +54,7 @@ export const projects = [
     title: "Counsailor - AI Mental Health Assistant",
     des: "Intelligent therapy companion powered by Google Gemini AI, secure Firebase authentication, and responsive mental health support.",
     img: "/counsailor.jpg",
-    iconLists: ["/re.svg", "/tail.svg", "/firebase.svg", "/gemini.svg"], 
+    tech: ["#React", "#TailwindCSS", "#Firebase", "#GeminiAI"],
     link: "https://counsailor.netlify.app",
   },
   {
@@ -62,7 +62,7 @@ export const projects = [
     title: "Flowsphere-Chatting App",
     des: "A secure, real-time chat app for simple texting along with file-sharing capabilities, powered by React, Firebase, and Tailwind CSS",
     img: "/flowsphere.jpg",
-    iconLists: ["/re.svg", "/tail.svg", "/firebase.svg"],
+    tech: ["#React", "#TailwindCSS", "#Firebase"],
     link: "https://flowsphere.netlify.app",
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     title: "DashZilla - Analytics Dashboard(Desktop Only)",
     des: "Comprehensive admin dashboard with interactive charts, real-time data visualization, sales analytics, and responsive design for business intelligence.",
     img: "/dashzilla.jpg",
-    iconLists: ["/re.svg", "/tail.svg"],
+    tech: ["#React", "#TailwindCSS"],
     link: "https://dashzilla.netlify.app",
   },
   {
@@ -78,7 +78,7 @@ export const projects = [
     title: "Climeadeeno-Weather app",
     des: "Get real time weather updates based on user's location and custom searches. React.js, Tailwind CSS and powered by openweather API",
     img: "/climeadeeno.jpg",
-    iconLists: ["/re.svg", "/tail.svg"],
+    tech: ["#React", "#TailwindCSS"],
     link: "https://climeadeeno.netlify.app/",
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
     title: "AnimeBible-Hub - Anime Discovery HUB",
     des: "Get details on the most popular and most trending animes or the ones you have in mind. Built with React.js, Tailwind CSS powered by Jikan API",
     img: "/animebible.jpg",
-    iconLists: ["/re.svg", "/tail.svg"],
+    tech: ["#React", "#TailwindCSS"],
     link: "https://animebible.netlify.app/",
   },
   {
@@ -94,7 +94,7 @@ export const projects = [
     title: "Portfolio-My Digital Domain",
     des: "Built in Next.js 14, Typescript, powered by Framer Motion, Three js showing full-stack capabilities",
     img: "/portfolio.jpg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    tech: ["#React", "#TypeScript", "#TailwindCSS", "#ThreeJs", "#FramerMotion"],
     link: "https://devmuneeb.netlify.app/",
   },
 ];
