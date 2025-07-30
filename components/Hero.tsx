@@ -54,6 +54,7 @@ const Hero = () => {
           {/* Resume download button */}
           <div className="mt-8">
             <a
+              id="resume"
               href="/my-resume.pdf"
               download
               title="download resume"

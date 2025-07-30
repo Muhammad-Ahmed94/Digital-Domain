@@ -8,11 +8,12 @@ const PinContainer = lazy(() => import("./ui/3d-pin").then(module => ({ default:
 
 const RecentProjects = () => {
   return (
-    <div className="py-15" id="projects">
-      <h1 className="heading">
+    <div className="py-10" id="projects">
+      
+      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 gap-12 mt-2">
+        <h1 className="heading">
         A quick overview of <span className="text-purple">My Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 gap-12 mt-2">
         {projects.map(({ id, title, des, img, tech, link }, index) => (
           <div
             key={id}

@@ -4,7 +4,6 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 
 // Lazy load non-critical components
-const Grid = lazy(() => import("@/components/Grid"));
 const RecentProjects = lazy(() => import("@/components/RecentProjects"));
 const Footer = lazy(() => import("@/components/Footer"));
 
@@ -26,11 +25,6 @@ export default function Home() {
         
         {/* Hero loads immediately for better FCP */}
         <Hero />
-        
-        {/* Lazy load sections below the fold */}
-        <Suspense fallback={<LoadingSpinner />}>
-          <Grid />
-        </Suspense>
         
         <Suspense fallback={<LoadingSpinner />}>
           <RecentProjects />
