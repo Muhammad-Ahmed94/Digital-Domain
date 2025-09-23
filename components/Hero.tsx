@@ -56,7 +56,8 @@ const Hero = () => {
             <a
               id="resume"
               href="/my-resume.pdf"
-              download
+              // download
+              target="_blank"
               title="download resume"
               className="inline-block"
               aria-label="Download Muneeb's Resume"
