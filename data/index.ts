@@ -23,7 +23,7 @@ export const projects = [
     img: "/forever.jpg",
     // iconLists: ["/mdb.svg", "/exp.svg", "/re.svg",  "/nj.svg", "/ts.svg", "/tail.svg"],
     tech: ["#MongoDB", "#Express.js", "#React", "#TypeScript", "#Tailwind CSS"],
-    link: "https://forever-frontend-je1a.onrender.com/",
+    link: "https://github.com/Muhammad-Ahmed94/forever",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const projects = [
     des: "Chatting application. MERN stack messaging platform with Socket.IO for RTC and online status tracking",
     img: "/letstalk.jpg",
     tech: ["#MongoDB", "#Express.js", "#React", "#TypeScript", "#SokcetIO", "#Tailwind CSS"],
-    link: "",
+    link: "https://github.com/Muhammad-Ahmed94/LetsTalk",
   },
   {
     id: 3,
