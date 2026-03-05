@@ -30,16 +30,23 @@ export const projects = [
     title: "LetsTalk - Real-Time Chat Application",
     des: "Chatting application. MERN stack messaging platform with Socket.IO for RTC and online status tracking",
     img: "/letstalk.jpg",
-    tech: ["#MongoDB", "#Express.js", "#React", "#TypeScript", "#SokcetIO", "#Tailwind CSS"],
+    tech: [
+      "#MongoDB",
+      "#Express.js",
+      "#React",
+      "#TypeScript",
+      "#SokcetIO",
+      "#Tailwind CSS",
+    ],
     link: "https://github.com/Muhammad-Ahmed94/LetsTalk",
   },
   {
     id: 3,
-    title: "GoWheels - Car Rental Platform",
-    des: "Book or Rent a car with GoWheels, with variety of cars to explore. Frontend-only",
-    img: "/gowheels.jpg",
-    tech: ["#React", "#TypeScript", "#TailwindCSS"],
-    link: "https://gowheels.netlify.app/",
+    title: "Counsailor - AI Mental Health Assistant",
+    des: "Intelligent therapy companion powered by Google Gemini AI, secure Firebase authentication, and responsive mental health support.",
+    img: "/counsailor.jpg",
+    tech: ["#React", "#TailwindCSS", "#Firebase", "#GeminiAI"],
+    link: "https://counsailor.netlify.app",
   },
   {
     id: 4,
@@ -50,12 +57,12 @@ export const projects = [
     link: "https://prodigygaming.netlify.app/",
   },
   {
-    id: 5,
-    title: "Counsailor - AI Mental Health Assistant",
-    des: "Intelligent therapy companion powered by Google Gemini AI, secure Firebase authentication, and responsive mental health support.",
-    img: "/counsailor.jpg",
-    tech: ["#React", "#TailwindCSS", "#Firebase", "#GeminiAI"],
-    link: "https://counsailor.netlify.app",
+    id: 3,
+    title: "GoWheels - Car Rental Platform",
+    des: "Book or Rent a car with GoWheels, with variety of cars to explore. Frontend-only",
+    img: "/gowheels.jpg",
+    tech: ["#React", "#TypeScript", "#TailwindCSS"],
+    link: "https://gowheels.netlify.app/",
   },
   {
     id: 6,
@@ -67,7 +74,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "DashZilla - Analytics Dashboard(Desktop Only)",
+    title: "DashZilla - Analytics Dashboard",
     des: "Comprehensive admin dashboard with interactive charts, real-time data visualization, sales analytics, and responsive design for business intelligence.",
     img: "/dashzilla.jpg",
     tech: ["#React", "#TailwindCSS"],
@@ -94,7 +101,13 @@ export const projects = [
     title: "Portfolio-My Digital Domain",
     des: "Built in Next.js 14, Typescript, powered by Framer Motion, Three js showing full-stack capabilities",
     img: "/portfolio.jpg",
-    tech: ["#React", "#TypeScript", "#TailwindCSS", "#ThreeJs", "#FramerMotion"],
+    tech: [
+      "#React",
+      "#TypeScript",
+      "#TailwindCSS",
+      "#ThreeJs",
+      "#FramerMotion",
+    ],
     link: "https://devmuneeb.netlify.app/",
   },
 ];
@@ -116,4 +129,3 @@ export const socialMedia = [
     img: "/insta.svg",
   },
 ];
-
