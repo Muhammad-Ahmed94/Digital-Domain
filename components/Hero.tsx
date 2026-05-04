@@ -56,7 +56,7 @@ const Hero = () => {
             <a
               id="resume"
               href="/my-resume.pdf"
-              // download
+              rel="noopener noreferrer"
               target="_blank"
               title="download resume"
               className="inline-block"

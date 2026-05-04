@@ -120,12 +120,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    link: "https://www.linkedin.com/in/muneeb-ahmed-544a01254/",
+    link: "https://www.linkedin.com/in/muneeb-a-544a01254/",
     img: "/link.svg",
-  },
-  {
-    id: 3,
-    link: "https://www.instagram.com/muneeb_ahmed._/?hl=en",
-    img: "/insta.svg",
   },
 ];

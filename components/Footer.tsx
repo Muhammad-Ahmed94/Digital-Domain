@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <p className="text-xs md:text-sm font-light">
-          Copyright &copy; 2024 DevMuneeb
+          Copyright &copy; 2025 DevMuneeb
         </p>
       </div>
     </footer>
